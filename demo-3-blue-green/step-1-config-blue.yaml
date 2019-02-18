@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Configuration
+metadata:
+  name: blue-green-demo
+spec:
+  revisionTemplate:
+    spec:
+      container:
+        image: gcr.io/knative-samples/knative-route-demo:blue
+        env:
+          - name: T_VERSION
+            value: "blue"
