@@ -1,0 +1,1 @@
+Borrowed heavily from https://github.com/knative/docs/blob/master/serving/samples/blue-green-deployment.md

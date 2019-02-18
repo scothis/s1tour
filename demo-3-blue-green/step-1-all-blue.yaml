@@ -10,3 +10,13 @@ spec:
         env:
           - name: T_VERSION
             value: "blue"
+
+---
+apiVersion: serving.knative.dev/v1alpha1
+kind: Route
+metadata:
+  name: blue-green-demo
+spec:
+  traffic:
+    - revisionName: blue-green-demo-00001
+      percent: 100
