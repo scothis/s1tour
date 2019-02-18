@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  scoth.is: ""
+kind: ConfigMap
+metadata:
+  name: config-domain
+  namespace: knative-serving
