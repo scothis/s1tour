@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1alpha1
 kind: Configuration
 metadata:
-  name: blue-green-demo
+  name: blue-green
 spec:
   revisionTemplate:
     spec:
@@ -15,8 +15,8 @@ spec:
 apiVersion: serving.knative.dev/v1alpha1
 kind: Route
 metadata:
-  name: blue-green-demo
+  name: blue-green
 spec:
   traffic:
-    - revisionName: blue-green-demo-00001
+    - revisionName: blue-green-00001
       percent: 100
