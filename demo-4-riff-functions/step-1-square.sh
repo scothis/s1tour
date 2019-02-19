@@ -2,9 +2,10 @@
 
 # setup
 
+watch -n1 kubectl get ksvc,revision,build,pods
+
 riff function create square \
   --git-repo https://github.com/projectriff-samples/node-square \
-  --artifact square.js \
   --verbose
 
 kail -l riff.projectriff.io/function=square \

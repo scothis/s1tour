@@ -4,7 +4,8 @@
 
 riff function create greet \
   --git-repo https://github.com/projectriff-samples/command-hello \
-  --artifact greet.sh
+  --artifact greet.sh \
+  --verbose
 
 # invoke
 
