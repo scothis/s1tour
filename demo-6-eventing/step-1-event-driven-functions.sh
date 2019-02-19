@@ -2,12 +2,15 @@
 
 # setup
 
+watch -n1 kubectl get channel,subscription,ksvc,pods
+
 riff channel create numbers
 riff channel create squares
 
 riff subscription create \
   --channel numbers \
-  --subscriber square --reply-to squares
+  --subscriber square \
+  --reply squares
 
 riff service create correlator \
   --image scothis/correlator:s1tour

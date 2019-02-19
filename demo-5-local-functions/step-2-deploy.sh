@@ -10,5 +10,5 @@ riff function create uppercase \
 
 riff service invoke uppercase --text -- \
   -w '\n' \
-  -d "shh!"
+  -d 'shh!'
  

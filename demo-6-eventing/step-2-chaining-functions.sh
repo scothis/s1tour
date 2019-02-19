@@ -6,7 +6,8 @@ riff channel create replies
 
 riff subscription create \
   --channel squares \
-  --subscriber greet --reply-to replies
+  --subscriber greet \
+  --reply replies
 
 riff subscription create \
   --channel replies \

@@ -8,7 +8,7 @@ riff function local run \
 
 # invoke
 
-curl localhost:8080 \
+curl localhost:8000 \
   -H 'Content-Type: text/plain' \
   -w '\n' \
   -d 'shhh!'
