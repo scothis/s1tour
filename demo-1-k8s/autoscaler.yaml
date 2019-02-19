@@ -1,4 +1,4 @@
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: hello
@@ -9,8 +9,4 @@ spec:
     name: hello
   minReplicas: 1
   maxReplicas: 5
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      targetAverageUtilization: 50
+  targetCPUUtilizationPercentage: 80
